@@ -1,0 +1,4 @@
+intercept_fraction,transmitted_bits,sifted_bits,sample_bits,estimated_qber,detected_eavesdropper,remaining_sifted_bits,simulation_seed
+0.0,10000,4971,994,0.0,False,3977,6640
+0.25,10000,4987,997,0.0802407221664995,False,3990,6665
+1.0,10000,5106,1021,0.24877571008814886,True,0,6740

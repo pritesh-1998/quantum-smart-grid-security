@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quantum-smart-grid-security"
+version = "1.0.0"
+description = "Reproducible smart-grid security comparison testbed"
+requires-python = ">=3.12"
+dependencies = [
+    "cryptography>=44",
+    "numpy>=2",
+    "pandas>=2.2",
+    "matplotlib>=3.9",
+    "streamlit>=1.40",
+    "qiskit>=1.2",
+    "qiskit-aer>=0.15",
+    "pqcrypto>=1,<2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["dashboard*", "experiments*", "security*", "smart_grid*"]
+exclude = ["tests*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

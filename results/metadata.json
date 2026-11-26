@@ -1,0 +1,46 @@
+{
+  "benchmark_run_utc": "2026-11-19T01:05:05.980003+00:00",
+  "classification": {
+    "cryptographic_timing": "measured locally in this Python process",
+    "message_deadline": "local processing only; excludes network and device I/O",
+    "bb84": "Monte Carlo protocol simulation",
+    "qrng": "Qiskit Aer pseudo-random measurement simulation, not physical QRNG",
+    "security_validation": "functional tests only; not a certification"
+  },
+  "runtime": {
+    "python": "3.12.16 (main, Oct 25 2026, 18:24:37) [Clang 21.0.0 (clang-2100.3.34.2)]",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "machine": "arm64",
+    "processor": "arm",
+    "logical_cpu_count": 10,
+    "packages": {
+      "cryptography": "50.0.2",
+      "matplotlib": "3.11.2",
+      "numpy": "2.5.5",
+      "pandas": "3.1.1",
+      "pqcrypto": "1.0.0",
+      "qiskit": "2.6.2",
+      "qiskit-aer": "0.18.4",
+      "streamlit": "1.67.0"
+    }
+  },
+  "benchmark_config": {
+    "iterations": 25,
+    "payload_bytes": 256,
+    "timing_trials": 500,
+    "substation_deadline_ms": 3.0
+  },
+  "qrng_simulation": {
+    "bits": 4096,
+    "ones_fraction": 0.500732421875,
+    "seed": 6640,
+    "source": "Qiskit Aer simulator"
+  },
+  "attack_demonstrations": {
+    "scenario": "synthetic local tamper and replay checks",
+    "aes_gcm_tamper_rejected": true,
+    "signature_tamper_rejected": true,
+    "duplicate_id_rejected": true,
+    "limitations": "not a network penetration test or IEC 61850 validation"
+  }
+}
